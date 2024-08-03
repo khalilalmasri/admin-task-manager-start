@@ -30,7 +30,7 @@ export default async function RootLayout({ children }) {
       <body>
         {getInitColorSchemeScript}
 
-        <AuthProvider>
+        {/* <AuthProvider> */}
           <SettingsProvider
             settings={settings}
             caches={CONFIG.isStaticExport ? 'localStorage' : 'cookie'}
@@ -43,7 +43,7 @@ export default async function RootLayout({ children }) {
               </MotionLazy>
             </ThemeProvider>
           </SettingsProvider>
-        </AuthProvider>
+        {/* </AuthProvider> */}
       </body>
     </html>
   );
