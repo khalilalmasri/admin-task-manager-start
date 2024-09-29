@@ -20,9 +20,10 @@ _static
 out
 dist
 build
+.git0
 
 # environment variables
-# .env
+.env
 .env.local
 .env.development.local
 .env.test.local

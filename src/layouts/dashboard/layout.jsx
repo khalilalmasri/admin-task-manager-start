@@ -8,6 +8,7 @@ import { iconButtonClasses } from '@mui/material/IconButton';
 
 import { useBoolean } from 'src/hooks/use-boolean';
 
+import { allLangs } from 'src/locales';
 import { _contacts, _notifications } from 'src/_mock';
 import { varAlpha, stylesMode } from 'src/theme/styles';
 
@@ -66,13 +67,7 @@ export function DashboardLayout({ sx, children, data }) {
             onOpenNav={mobileNavOpen.onTrue}
             data={{
               nav: navData,
-              langs: [
-                { value: 'en', label: 'English', countryCode: 'GB' },
-                { value: 'fr', label: 'French', countryCode: 'FR' },
-                { value: 'vi', label: 'Vietnamese', countryCode: 'VN' },
-                { value: 'cn', label: 'Chinese', countryCode: 'CN' },
-                { value: 'ar', label: 'Arabic', countryCode: 'SA' },
-              ],
+              langs: allLangs,
               account: _account,
               contacts: _contacts,
               workspaces: _workspaces,
